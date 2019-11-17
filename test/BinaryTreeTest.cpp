@@ -71,3 +71,4 @@ TEST(tree, LCA) {
     ASSERT_EQ(tree->LCA(3, 2), 3);
     delete tree;
 }
+// got idea from class 8 tree.cpp and unit test 
