@@ -14,8 +14,8 @@ public:
     TreeNode() : left(nullptr), right(nullptr) {
     }
 
-    TreeNode(T val) : val(val) {
-        TreeNode();
+    TreeNode(T val) : TreeNode() {
+        this->val = val;
     }
 
     void setLeft(TreeNode<T> *left) {
@@ -32,5 +32,8 @@ public:
 
     TreeNode *getRight() const {
         return right;
+    }
+    int getVal() const{
+        return val;
     }
 };
